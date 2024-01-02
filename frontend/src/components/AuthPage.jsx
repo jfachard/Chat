@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from'axios'
+import axios from 'axios'
 
 const AuthPage = (props) => {
     const onSubmit = (e) => {
@@ -9,7 +9,7 @@ const AuthPage = (props) => {
         'http://localhost:3001/authenticate',
         {username: value}
       )
-      .then(r => props.onAuth({...r.date, scret: value}))
+      .then(r => props.onAuth({ ...r.data, secret: value}))
       .catch(e => console.log('error', e))
     };
   
