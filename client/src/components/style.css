@@ -1,0 +1,87 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.room {
+  width: 10%;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #979797;
+}
+
+.join {
+  width: 8%;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #979797;
+  background-color: #3f3f3f;
+  color: #fff;
+  cursor: pointer;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #979797;
+}
+
+button {
+  width: 4%;
+  padding: 10px;
+  background-color: #3f3f3f;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #3f3f3f;
+}
+
+.message {
+  max-width: 30%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #37a3d2;
+  color: white;
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: #ddd;
+}
+
+.message .content {
+  margin: 5px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
